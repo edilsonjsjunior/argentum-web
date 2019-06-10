@@ -129,6 +129,7 @@ public class FiltraNegociacoesIT {
 
 	private void iniciaChrome() {
 		driver = new ChromeDriver();
+		return driver;
 	}
 
 	private void iniciaPhantomJs() {
