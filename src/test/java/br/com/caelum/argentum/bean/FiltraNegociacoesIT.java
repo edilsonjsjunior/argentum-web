@@ -58,19 +58,19 @@ public class FiltraNegociacoesIT {
 
 	@Before
 	public void iniciaNavegador() {
-		//if (System.getProperty("phantomjs.binary.path") != null) {
+		if (System.getProperty("phantomjs.binary.path") != null) {
 			
-		//	iniciaPhantomJs();
+			iniciaPhantomJs();
 			
-		//} else if (System.getProperty("webdriver.chrome.driver") != null) {
+		} else if (System.getProperty("webdriver.chrome.driver") != null) {
 			
 			iniciaChrome();
 			
-		//} else {
+		} else {
 			
-		//	throw new RuntimeException("Nao eh possivel determinar o navegador para execucao dos testes.");
+			throw new RuntimeException("Nao eh possivel determinar o navegador para execucao dos testes.");
 			
-		//}
+		}
 	}
 
 	@After
